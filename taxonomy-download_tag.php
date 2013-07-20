@@ -11,8 +11,8 @@
 
 get_header(); ?>
 
-	<div id="primary" class="site-content">
-		<div id="content" role="main" class="store-grid">
+	<div id="primary" class="site-content store-grid three-column">
+		<div id="content" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
 				<?php get_template_part( 'content', 'product' ); ?>

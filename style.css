@@ -1405,17 +1405,28 @@ a.comment-edit-link:hover {
 
 /* =Easy Digital Downloads
 ----------------------------------------------- */
-.tax-download_category .site-content,
-.page-template-page-templatesstore-grid-php .site-content {
+.site-content.store-grid {
 	width: 100%;
 }
 .store-grid article {
+	float: left;
+}
+.store-grid.three-column article {
 	float: left;
 	width: 31.1%;
 	margin: 0 3.33% 3.33% 0;
 	height: 350px;
 }
-.store-grid article:nth-child(3n+3) {
+.store-grid.three-column article:nth-child(3n+3) {
+	margin-right: 0;
+}
+.store-grid.two-column article {
+	float: left;
+	width: 48%;
+	margin: 0 3.33% 3.33% 0;
+	height: 440px;
+}
+.store-grid.two-column article:nth-child(2n+2) {
 	margin-right: 0;
 }
 .store-grid article h2 {
